@@ -85,7 +85,7 @@ export function RSVPSection() {
     )
   }
 
-  const inputClass = 'flex h-10 w-full border px-3 py-2 text-sm bg-white/80 rounded-xl focus:outline-none focus:ring-2'
+  const inputClass = 'flex h-10 w-full border px-3 py-2 text-base bg-white/80 rounded-xl focus:outline-none focus:ring-2'
   const inputStyle = { borderColor: 'rgba(92,32,24,0.2)', color: '#5C2018' }
   const labelClass = 'font-body text-xs tracking-widest uppercase mb-2 block font-medium'
 

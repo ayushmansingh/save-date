@@ -46,7 +46,7 @@ export function IntroCurtainSection({ onComplete, onFirstClick }: IntroCurtainSe
 
   return (
     <section
-      className="relative h-screen w-full overflow-hidden"
+      className="relative h-[100dvh] w-full overflow-hidden"
       style={{ cursor: state === 'idle' ? 'pointer' : 'default' }}
       onClick={handleClick}
     >
@@ -67,6 +67,7 @@ export function IntroCurtainSection({ onComplete, onFirstClick }: IntroCurtainSe
         ref={videoRef}
         src={curtainVideoSrc}
         playsInline
+        muted
         preload="auto"
         className="absolute inset-0 w-full h-full object-cover"
         style={{
@@ -109,7 +110,7 @@ export function IntroCurtainSection({ onComplete, onFirstClick }: IntroCurtainSe
               className="font-body text-xs tracking-[0.3em] uppercase"
               style={{ color: 'rgba(92,32,24,0.6)' }}
             >
-              Click to play
+              Tap to begin
             </motion.p>
           </motion.div>
         )}
