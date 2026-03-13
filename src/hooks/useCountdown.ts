@@ -3,7 +3,7 @@ import type { CountdownValues } from '../types'
 
 // ── TARGET DATE ────────────────────────────────────────────────────────────
 // Change this to the actual wedding date.
-export const WEDDING_DATE = new Date('2027-09-10T16:00:00')
+export const WEDDING_DATE = new Date('2026-11-20T16:00:00')
 
 function getTimeLeft(target: Date): CountdownValues {
   const diff = Math.max(0, target.getTime() - Date.now())

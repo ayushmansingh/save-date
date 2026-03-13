@@ -1,9 +1,6 @@
 import { motion } from 'framer-motion'
-import { useLanguage } from '../../context/LanguageContext'
 
 export function ThankYouCard() {
-  const { t } = useLanguage()
-
   return (
     <motion.section
       initial={{ opacity: 0, y: 30 }}
@@ -13,42 +10,24 @@ export function ThankYouCard() {
       className="py-16 px-8 flex flex-col items-center justify-center text-center"
       style={{ backgroundColor: 'rgb(250, 248, 245)' }}
     >
-      {/* Postage-stamp style card */}
       <div
         className="relative max-w-sm w-full px-8 py-10 rounded-sm shadow-md"
-        style={{
-          backgroundColor: 'white',
-          border: '12px solid white',
-          outline: '2px solid rgba(92,32,24,0.15)',
-        }}
+        style={{ backgroundColor: 'white', border: '12px solid white', outline: '2px solid rgba(92,32,24,0.15)' }}
       >
-        {/* Perforated edge effect */}
         <div
           className="absolute inset-0 rounded-sm pointer-events-none"
-          style={{
-            backgroundImage: 'radial-gradient(circle, rgba(92,32,24,0.08) 1px, transparent 1px)',
-            backgroundSize: '12px 12px',
-            backgroundPosition: '-6px -6px',
-          }}
+          style={{ backgroundImage: 'radial-gradient(circle, rgba(92,32,24,0.08) 1px, transparent 1px)', backgroundSize: '12px 12px', backgroundPosition: '-6px -6px' }}
         />
-
         <p className="font-body text-xs tracking-[0.3em] uppercase mb-4" style={{ color: 'rgba(92,32,24,0.5)' }}>
-          Sam & Sofía
+          Dhwani & Ayushman
         </p>
-        <h2 className="font-script text-5xl md:text-6xl mb-4" style={{ color: '#5C2018' }}>
-          {t('thankYou.title')}
-        </h2>
+        <h2 className="font-script text-5xl md:text-6xl mb-4" style={{ color: '#5C2018' }}>Thank You!</h2>
         <p className="font-body text-sm leading-relaxed" style={{ color: '#5C2018' }}>
-          {t('thankYou.message')}
+          We are so happy you will be joining us on this special day. We cannot wait to celebrate with you!
         </p>
-
-        {/* Stamp decoration */}
         <div
           className="absolute top-4 right-4 w-12 h-14 flex items-center justify-center text-lg"
-          style={{
-            border: '2px solid rgba(92,32,24,0.3)',
-            borderRadius: 2,
-          }}
+          style={{ border: '2px solid rgba(92,32,24,0.3)', borderRadius: 2 }}
         >
           💍
         </div>

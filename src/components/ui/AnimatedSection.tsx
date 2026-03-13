@@ -1,11 +1,12 @@
 import { motion } from 'framer-motion'
-import type { ReactNode } from 'react'
+import type { ReactNode, CSSProperties } from 'react'
 
 interface AnimatedSectionProps {
   children: ReactNode
   delay?: number
   y?: number
   className?: string
+  style?: CSSProperties
 }
 
 export function AnimatedSection({
@@ -13,6 +14,7 @@ export function AnimatedSection({
   delay = 0,
   y = 20,
   className,
+  style,
 }: AnimatedSectionProps) {
   return (
     <motion.div
@@ -21,6 +23,7 @@ export function AnimatedSection({
       transition={{ duration: 0.6, delay, ease: 'easeOut' }}
       viewport={{ once: true }}
       className={className}
+      style={style}
     >
       {children}
     </motion.div>
