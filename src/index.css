@@ -1,0 +1,27 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    background-color: rgb(250, 248, 245);
+    color: #5C2018;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  /* Hide scrollbar when scratch section is active */
+  body.scratch-locked {
+    overflow: hidden;
+  }
+}
+
+@layer utilities {
+  .bg-cream {
+    background-color: rgb(250, 248, 245);
+  }
+}

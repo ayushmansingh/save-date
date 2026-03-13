@@ -1,0 +1,10 @@
+node_modules
+dist
+.env
+.env.local
+.DS_Store
+
+# Reference bundle files (not part of source)
+index-BBIwAgSn.js
+index-bYuRLTYZ.css
+~flock.js
